@@ -5,6 +5,7 @@
 
 ### BasePage Class
 #### Some of the commonly used methods in a BasePage class in TestNG include:
+#### we can remove BrowserUtils and put all common methods in BasePage class too (Amazon project was like this)
 
 * Initialization of the driver object for web automation frameworks
 * Navigation to the page URL
