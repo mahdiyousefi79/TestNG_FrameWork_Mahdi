@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
 
-
+// In this page we use for GateWay page also we write constructor here, then no need to create constructor for each class
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
