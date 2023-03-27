@@ -3,6 +3,7 @@
     <test name="Vytrack Smoke Test">
         <classes>
             <class name="com.vytrack.tests.LoginTest"></class>
+            <class name="com.vytrack.tests.DashboardsTest"></class>
         </classes>
     </test>
 </suite>

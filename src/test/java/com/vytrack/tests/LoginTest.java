@@ -10,6 +10,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void loginAsDriver() {
+        extentLogger = report.createTest("Verify user can login as a driver");
         LoginPage loginPage = new LoginPage();
 
         String username = ConfigurationReader.get("driver_username");
@@ -25,6 +26,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void loginAsStoreManager() {
+        extentLogger = report.createTest("Verify user can login as a store manager");
         LoginPage loginPage = new LoginPage();
 
         String username = ConfigurationReader.get("storemanager_username");
@@ -36,6 +38,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void loginAsStoreManager2() {
+        extentLogger = report.createTest("Verify user can login as a store manager 2");
         LoginPage loginPage = new LoginPage();
 
         loginPage.loginAsStoreManager();
@@ -44,6 +47,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void wrongPasswordTest() {
+        extentLogger = report.createTest("Verify user can't login with wrong password");
         LoginPage loginPage = new LoginPage();
 
         loginPage.usernameInput.sendKeys("user1");
@@ -55,6 +59,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void wrongUsernameTest() {
+        extentLogger = report.createTest("Verify user can't login with wrong user name");
         LoginPage loginPage = new LoginPage();
 
         loginPage.usernameInput.sendKeys("someusername");
